@@ -1,7 +1,7 @@
 
 #include <SPI.h>
-#include <RH_RF95.h>
-#include <ArduinoJson.h>
+#include <RH_RF95.h> // find latest 'zip' file at top of page here: http://www.airspayce.com/mikem/arduino/RadioHead/ 
+#include <ArduinoJson.h> // https://github.com/bblanchon/ArduinoJson
 
 #define NODEID 1
 #define GATEWAYID 1
@@ -11,6 +11,7 @@
 
 // Singleton instance of the radio driver
 RH_RF95 rf95;
+
 
 // Blinky on receipt
 #define LED 9
